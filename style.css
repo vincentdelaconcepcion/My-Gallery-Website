@@ -71,9 +71,9 @@ a{
 }
 
 @keyframes sway{
-    0%   { transform: rotate(-2deg); }
-    50%  { transform: rotate(2deg); }
-    100% { transform: rotate(-2deg); }
+    0%   { transform: rotate(-1deg); }
+    50%  { transform: rotate(1deg); }
+    100% { transform: rotate(-1deg); }
 }
 
 
@@ -116,8 +116,8 @@ a{
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     transform: rotate(2.3deg);
     max-width: 620px;
-    margin-top: 300px;
-    margin-bottom: 50px;
+    margin-top: 200px;
+    margin-bottom: 0px;
     font-family: 'Caveat', cursive;
     text-align: center;
 }
@@ -208,6 +208,7 @@ a{
 }
 
 /* ---------- ABOUT ME: BOARD FRAME WRAPPER ---------- */
+
 .detectiveboard{
     position: relative;
     max-width: 1160px;
@@ -221,7 +222,7 @@ a{
         inset 0 0 40px rgba(0,0,0,0.4),        
         0 20px 40px rgba(0,0,0,0.5);            
 }
- 
+
 .detectiveboard::before{
     content: "";
     position: absolute;
@@ -294,7 +295,39 @@ a{
     height: 850px;
     margin: 40px auto 0;
 }
- 
+.polaroidpicme{
+    background-color: rgb(253,251,247);
+    padding: 14px 14px 44px 14px;
+    position: relative;
+    
+    width: 220px;
+    height:220px;
+    left: 800px;
+    bottom: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform:rotate(3.2deg);
+}
+.polaroidpicme:before{
+    content: "";
+    position: absolute;
+    display: flex;
+    
+    top: -9px;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #e2694a, #b5482a 70%);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+}
+ .polaroidpicme img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
 .strings{
     position: absolute;
     top: 0;
